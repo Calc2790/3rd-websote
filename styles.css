@@ -1,0 +1,74 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body with a nice font and some padding */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Style the header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation menu styles */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles for different sections */
+section {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+/* Style the Discord button */
+#discord-button {
+display: inline-block;
+background-color: #7289DA; /* Discord brand color */
+color: #ffffff;
+padding: 10px 15px;
+margin: 10px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+
+/* Change the color slightly on hover */
+#discord-button:hover {
+background-color: #5b6eae;
+}
