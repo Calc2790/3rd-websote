@@ -749,3 +749,13 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Selecting the body element and applying a background image */
+body {
+  /* Using the background-image property and specifying the image URL */
+  background-image: url("https://cdn.discordapp.com/attachments/1169809320016347209/1218367830345515008/nicepfp.png?ex=66076876&is=65f4f376&hm=f714e3e37190ee5f3c9989414b3fe36a5203a653b1abf160cc03daf9d1de6cac&");
+  /* Using the background-repeat property and setting it to no-repeat to avoid tiling the image */
+  background-repeat: no-repeat;
+  /* Using the background-size property and setting it to cover to make the image cover the entire element */
+  background-size: cover;
+}
