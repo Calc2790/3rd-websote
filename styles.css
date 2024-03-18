@@ -759,3 +759,16 @@ body {
   /* Using the background-size property and setting it to cover to make the image cover the entire element */
   background-size: cover;
 }
+
+body {
+    cursor: none;
+}
+
+#customCursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://cdn.discordapp.com/attachments/1218331742289789008/1219200915353899059/nicepfp.png?ex=660a7055&is=65f7fb55&hm=fe0a71c7966c0217773be05ce174d5c119427edb9d20a366bac349062b6de1b8');
+    background-size: cover;
+    pointer-events: none;
+}
