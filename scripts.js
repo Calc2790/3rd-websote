@@ -24,24 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Here you would add your analytics or tracking code
   });
 }
-
-// URL of the image you want to use as the favicon
-const faviconUrl = 'https://cdn.discordapp.com/attachments/1218331742289789008/1219200915353899059/nicepfp.png?ex=660a7055&is=65f7fb55&hm=fe0a71c7966c0217773be05ce174d5c119427edb9d20a366bac349062b6de1b8';
-
-// Function to set the favicon
-function changeFavicon(url) {
-  const link = document.createElement('link');
-  const oldLink = document.querySelector("link[rel*='icon']");
-
-  link.rel = 'shortcut icon';
-  link.href = url;
-
-  if (oldLink) {
-    document.head.removeChild(oldLink);
-  }
-
-  document.head.appendChild(link);
-}
-
-// Call the function to change the favicon to the specified URL
-changeFavicon(faviconUrl);
