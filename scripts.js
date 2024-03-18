@@ -24,3 +24,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Here you would add your analytics or tracking code
   });
 });
+const cursor = document.getElementById('customCursor');
+let mouseX = 0; 
+let mouseY = 0; 
+let cursorX = 0;
+let cursorY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.pageX;
+  mouseY = e.pageY;
+});
+
+function animateCursor() {
+  const distX = mouseX - cursorX;
+  const distY = mouseY - cursorY;
+
+  cursorX = cursorX + (distX / 8);
+  cursorY = cursorY + (distY / 8);
+
+  cursor.style.left = cursorX + 'px';
+  cursor.style.top = cursorY + 'px';
+
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
