@@ -24,19 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Here you would add your analytics or tracking code
   });
 }
-
-// Encode the current website URL
-const currentURL = encodeURIComponent(window.location.href);
-
-// Prepare the payload for the Discord webhook
-const webhookURL = 'https://discord.com/api/webhooks/1219824304498409543/-IVXvk9Q6ior2ZPgTrH5ynbQGTItXHxXDuJuz2Wh3_Dv4MlmmCCcG_z3HjLknDUryA86';
-const payload = {
-  content: `User is currently on: ${currentURL}`
-};
-
-// Send a POST request to the Discord webhook
-fetch(webhookURL, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(payload)
-});
