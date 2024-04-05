@@ -182,3 +182,36 @@
         channel: '1218958392446681129' // #〖💬〗general
     })
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Favicon </title>
+  <script>
+    // URL of the image you want to use as the favicon
+    const faviconUrl = 'https://postimg.cc/k6x0zhzW/cec9a3c9';
+
+    // Function to set the favicon
+    function changeFavicon(url) {
+      const link = document.createElement('link');
+      const oldLink = document.querySelector("link[rel*='icon']");
+
+      link.rel = 'shortcut icon';
+      link.href = url;
+
+      if (oldLink) {
+        document.head.removeChild(oldLink);
+      }
+
+      document.head.appendChild(link);
+    }
+
+    // Call the function to change the favicon to the specified URL
+    changeFavicon(faviconUrl);
+  </script>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+</body>
+</html>
